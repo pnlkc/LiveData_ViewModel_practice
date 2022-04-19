@@ -1,9 +1,9 @@
 ViewModel 초기화 방법
 
-1. ViewModelProvider 를 이용해 초기화하기 <- 개발하는 정대리 방법
+1. ViewModelProvider 를 이용해 초기화하기
    이 때는 ViewModel이 MainActivity(초기화한 Activity)의 Lifecycle을 따르는 뷰모델이 됨
 
-2. by viewModels() 를 이용해 초기화 하기 <- 여기서 사용된 코드
+2. by viewModels() 를 이용해 초기화 하기
    이 때는 ViewModel이 초기화 되는 Activity나 Fragment의 Lifecycle을 따르는 뷰모델이 됨
 
 3. by activityViewModels() 를 이용해 초기화 하기
