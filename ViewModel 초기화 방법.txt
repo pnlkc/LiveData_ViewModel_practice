@@ -1,0 +1,12 @@
+ViewModel 초기화 방법
+
+1. ViewModelProvider 를 이용해 초기화하기 <- 개발하는 정대리 방법
+   이 때는 ViewModel이 MainActivity(초기화한 Activity)의 Lifecycle을 따르는 뷰모델이 됨
+
+2. by viewModels() 를 이용해 초기화 하기 <- 여기서 사용된 코드
+   이 때는 ViewModel이 초기화 되는 Activity나 Fragment의 Lifecycle을 따르는 뷰모델이 됨
+
+3. by activityViewModels() 를 이용해 초기화 하기
+   이 방법은 Fragment에서만 사용할 수 있다! (Activity에서 사용불가!)
+   이 때는 ViewModel이 초기화 되는 Fragment를 포함한 Acticity의 Lifecycle을 따르는 뷰모델이 됨
+   이 방법을 사용하면 같은 Activity를 가지는 Fragment 사이에 SharedViewModel로 사용 가능
